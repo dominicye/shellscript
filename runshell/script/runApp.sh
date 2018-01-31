@@ -20,8 +20,10 @@ fi
 echo "base app direcotry created"
 
 if [ ! -d "$appProjectPath" ]; then
+cd /usr/src/app
 git clone git@39.108.135.118:ways/live.git
 else
+cd /usr/src/app/live
 echo "pull latest file from git server"
 git pull origin master
 fi
